@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoffeeRun</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
     <header>
@@ -43,8 +44,9 @@
                         <label for="strengthLevel">Caffeine Rating</label>
                         <input name="strength" id="strengthLevel" type="range" value="30">
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button href="paymentform.html" rel="modal:open" type="submit" class="btn btn-default">Submit</button>
                     <button type="reset" class="btn btn-default">Reset</button>
+                    <a href="paymentform.html" rel="modal:open" class="btn btn-default">Test</a>
                 </form>
                 <!--Makes the checklist-->
                 <div class="panel panel-default">
@@ -59,13 +61,14 @@
         </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
     <script src="scripts/checklist.js" charset="utf-8"></script>
-    <script src="scripts/formhandler.js" charset="utf-8"></script>
     <script src="scripts/datastore.js" charset="utf-8"></script>
     <script src="scripts/truck.js" charset="utf-8"></script>
     <script src="scripts/main.js" charset="utf-8"></script>
-    <!--Adding the JQuery for payment form-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="scripts/formhandler.js" charset="utf-8"></script>
+
+
 </body>
 </html>

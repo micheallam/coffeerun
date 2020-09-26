@@ -16,7 +16,7 @@
             }
         }
         addSubmitHandler(fn) {
-            console.log('Setting submit handler for form');
+            console.log('Setting submit handler for coffee order form');
 
             this.$formElement.on('submit', function (event) {
                 event.preventDefault();
@@ -36,23 +36,19 @@
             });
         }
 
-        addPaymentHandler(fn) {
-            console.log('Setting submit handler for payment form');
-            this.$formElement.on('submit', function(event) {
-                event.preventDefault();
+        // addPaymentHandler(fn) {
+        //     console.log('Setting submit handler for payment form');
+        //     this.$formElement.on('payment', function(event) {
+        //         event.preventDefault();
 
-                var data= {};
-                $(this).serializeArray().forEach(function(item) {
-                    data[item.name] = item.value;
-                    console.log(item.name + ' is ' + item.value);
-                });
-                console.log(data);
-                //HTML DOM innerHTML function which prints message when clicked
-                var modalBody = 'Thank you for your payment, ' + data.username + '!';
-                $('#ex1').text(modalBody);
-                $('#ex1').modal('show');
-            });
-        }
+        //         var data= {};
+        //         $(this).serializeArray().forEach(function(item) {
+        //             data[item.name] = item.value;
+        //             console.log(item.name + ' is ' + item.value);
+        //         });
+        //         console.log(data);
+        //     });
+        // }
     }
 
     App.FormHandler = FormHandler;
